@@ -35,8 +35,12 @@ Module Functions:
 https://github.com/c-ridgway/node-graceful-shutdown-manager/tree/main/example
 
 ```javascript
+// Requires bash for autorestart/autoreload
 npm run development
 npm run production
+
+// Doesn't require bash
+npm run standalone
 ```
 
 # FAQ

@@ -1,0 +1,51 @@
+{
+  "database": {
+    "host": "192.168.1.250",
+    "port": 3306,
+    "socket": "/tmp/mysql.sock",
+    "username": "testme",
+    "password": "testme",
+    "database": "testme",
+    "connections": 5
+  },
+  "router": {
+    "https": {
+      "enable": false,
+      "bind": "0.0.0.0",
+      "port": 4001,
+      "key": "./certs/privkey.pem",
+      "cert": "./certs/fullchain.pem"
+    },
+    "http": {
+      "enable": true,
+      "bind": "0.0.0.0",
+      "port": 4000
+    }
+  },
+  "logs": {
+    "error": {
+      "enable": true,
+      "interval": "5m",
+      "filename": "logs/error.log"
+    },
+    "info": {
+      "enable": true,
+      "interval": "1m",
+      "filename": "logs/info.log"
+    },
+    "log": {
+      "enable": false,
+      "interval": "1m",
+      "filename": "logs/output.log"
+    }
+  },
+  "gsm": {
+    "debug": true,
+    "verbose": {
+      "promises_delayed": true,
+      "promises": false,
+      "events": false,
+      "defines": true
+    }
+  }
+}

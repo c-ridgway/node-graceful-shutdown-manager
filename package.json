@@ -1,0 +1,31 @@
+{
+  "name": "graceful-shutdown-manager",
+  "version": "2.0.0",
+  "description": "All in one solution to gracefully shutdown your application through a simple delayed shutdown process. Optionally supports nodemon. (initialise, free, lock critical sections)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-ridgway/node-graceful-shutdown-manager.git"
+  },
+  "keywords": [
+    "graceful",
+    "shutdown",
+    "terminate",
+    "sigterm",
+    "manager",
+    "cleanup",
+    "exit",
+    "quit"
+  ],
+  "author": "c-ridgway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-ridgway/node-graceful-shutdown-manager/issues"
+  },
+  "homepage": "https://github.com/c-ridgway/node-graceful-shutdown-manager#readme",
+  "dependencies": {
+  }
+}

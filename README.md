@@ -15,14 +15,14 @@ Autorestart on Windows will require bash added to the PATH environment variable,
 # Module Functions
 
 ```javascript
-GSM Functions:
-  gsm.exit() Gracefully shutdown application by running free and then terminating the process.
-  gsm.free() Gracefully run free events, without exiting. (autoreload code, etc)
-  gsm.isExiting() Use when in a loop/long task, to avoid continuing
+// GSM Functions:
+  gsm.exit() // Gracefully shutdown application by running free and then terminating the process.
+  gsm.free() // Gracefully run free events, without exiting. (autoreload code, etc)
+  gsm.isExiting() // Use when in a loop/long task, to avoid continuing
   gsm.isFreeing()
 
-Module Functions:
-  base.lock() Wait to free the object until it's unlocked again
+// Module Functions:
+  base.lock() // Wait to free the object until it's unlocked again
   base.unlock()
   base.isLocked()
   base.setTimeout(funct, timeMs) // Locks the content, so it will not end the process until the body has finished executing

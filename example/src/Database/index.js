@@ -52,7 +52,7 @@ class Database extends Loader {
   }
 
   async close() {
-    //await this._connection.end();
+    await this._pool.end();
   }
 }
 

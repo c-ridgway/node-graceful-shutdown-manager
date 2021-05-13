@@ -32,7 +32,7 @@ Module Functions:
 # Template Project
 ## Base your project around this pattern
 
-https://github.com/c-ridgway/node-graceful-shutdown-manager/example
+https://github.com/c-ridgway/node-graceful-shutdown-manager/tree/main/example
 
 ```javascript
 npm run development

@@ -8,11 +8,11 @@ Use for any node.js project which might be negatively impacted by immediate term
 
 Locking is a mechanism which avoids beginning the shutdown process until a block of code has finished. Wrap important code such as file writing with `lock()` and `unlock()`. This will ensure no corruption occurs or resources are freed when they might be required. Ensure the code within the lock is synchronous. I recommend the `fs-extra` package for a drop-in fs promise replacement.
 
-# Requirements
+## Requirements
 
 Autorestart on Windows will require bash added to the PATH environment variable, either through msys2 or WSL2.
 
-# Module Functions
+## Module Functions
 
 ```javascript
 // GSM Functions:
@@ -29,8 +29,8 @@ Autorestart on Windows will require bash added to the PATH environment variable,
   base.setInterval(funct, timeMs) // Same as above
 ```
 
-# Template Project
-## Base your project around this pattern
+## Template Project
+### Base your project around this pattern
 
 https://github.com/c-ridgway/node-graceful-shutdown-manager/tree/main/example
 
@@ -43,7 +43,7 @@ npm run production
 npm run standalone
 ```
 
-# FAQ
+## FAQ
 
 This project encompasses the app lifecycle, to break it down, it might be easier to explain what it does and does not do.
 

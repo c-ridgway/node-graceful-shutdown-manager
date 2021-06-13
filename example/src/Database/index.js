@@ -1,6 +1,7 @@
 const Loader = require("graceful-shutdown-manager").Loader;
 const mysql = require("mariadb");
 const fs = require("fs");
+const fecha = require("fecha");
 
 class Database extends Loader {
   constructor(config) {
@@ -53,6 +54,10 @@ class Database extends Loader {
 
   async close() {
     await this._pool.end();
+  }
+  
+  toMysqlDate(date) {
+    return (!date)? null: fecha.format(date, "YYYY-MM-DD HH:mm:ss");
   }
 }
 

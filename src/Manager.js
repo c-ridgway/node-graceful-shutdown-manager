@@ -146,7 +146,7 @@ class GSM {
     }
 
     await this.free();
-    //await this.__sleep(2000);
+    //await this.sleep(2000);
 
     process.exit(0);
   }
@@ -229,12 +229,6 @@ class GSM {
     } catch (error) {
       console.error(error);
     }
-  }
-
-  __sleep(ms) {
-    return new Promise((resolve) => {
-      setTimeout(resolve, ms);
-    });
   }
 }
 

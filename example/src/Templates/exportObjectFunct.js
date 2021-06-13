@@ -5,7 +5,7 @@
 module.exports = {
   async init() {
     await database.modules.exportObject.promises.init(this);
-    await this.gsm.__sleep(2000);
+    await this.sleep(2000);
   },
   async free() {
   },

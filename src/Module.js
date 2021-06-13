@@ -199,6 +199,12 @@ class Module {
     }, delayMs);
   }
 
+  sleep(ms) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
+  }
+
   log(...args) {
     console.log(this.__id + ":", ...args);
   }

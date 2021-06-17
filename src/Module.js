@@ -138,6 +138,10 @@ class Module {
     }
   }
 
+  getId(full) {
+    return (full)? this.__id: Path.basename(this.__id);
+  }
+
   get gsm() {
     return Module.gsm;
   }

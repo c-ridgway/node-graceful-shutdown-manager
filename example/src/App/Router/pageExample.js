@@ -21,7 +21,7 @@ module.exports = {
           ...request.params,
           ...request.query
         };
-      } catch (error) {
+      } catch (e) {
         console.error(e);
 
         return {
@@ -39,7 +39,7 @@ module.exports = {
         return { 
           success: 1
         };
-      } catch (error) {
+      } catch (e) {
         console.error(e);
 
         return {

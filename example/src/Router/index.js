@@ -69,7 +69,7 @@ class Router extends Loader {
 
   async close() {
     for (const [protocol, server] of Object.entries(this.servers)) {
-      await server.close();
+      server.close();
     }
   }
 }

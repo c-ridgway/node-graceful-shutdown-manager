@@ -52,7 +52,7 @@ function wrapPromise(target, eventName, promise) {
 class Module {
   constructor(filename) {
     console.assert(filename !== undefined);
-
+    
     this.__id = Module.findId(filename);
 
     this.__hasInit = false;
@@ -83,6 +83,10 @@ class Module {
   static findId(filename) {
     let id = filename.substring(Path.join('src', Path.dirname(require.main.filename)).length + 1);
     id = id.substring(0, id.length - Path.extname(id).length); // Strip extension
+    if (id[0] === Path.sep) { // Remove starting slash (Linux)
+      id = id.slice(1);
+    }
+    
     return (id.endsWith("index"))? id.split(Path.sep)[0]: id;
   }
 

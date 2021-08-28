@@ -1,6 +1,6 @@
 {
   "name": "graceful-shutdown-manager",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "All in one solution to gracefully shutdown your application through a simple delayed shutdown process. Also allows code reloading and program restarting, instead of using a not so graceful process manager line nodemon.",
   "main": "index.js",
   "scripts": {
